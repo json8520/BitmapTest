@@ -85,7 +85,7 @@ namespace tdl
 		for (size_t r = 0; r < height; ++r)
 		{
 			int rowIdx = r * widthStep;
-			int printedRowIdx = r * printedWidthStep;
+			int printedRowIdx = (height - 1 - r) * printedWidthStep;
 
 			for (size_t c = 0; c < widthStep; ++c)
 			{
